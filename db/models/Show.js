@@ -1,11 +1,10 @@
-const mongoose = require("../connection");
+const mongoose = require('../connection');
 
 const ShowSchema = mongoose.Schema({
-  title:String,
-  url:String,
-
+	title: String,
+	image: String,
 });
 
-const Show = mongoose.model("show", ShowSchema);
+const Show = mongoose.model('show', ShowSchema);
 
 module.exports = Show;
