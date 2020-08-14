@@ -1,6 +1,8 @@
+const cors = require('cors');
 const express = require('express');
 const showsController = require('./controllers/shows');
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
